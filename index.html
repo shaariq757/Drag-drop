@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--FIrst Container-->
+    <div id="contOne">
+        <p id = "p" draggable="true" ondragstart="drag(event)">Drag this text</p>
+        <img src="img/sp.jpg" alt="image" id="img" draggable="true" ondragstart="drag(event)">
+        <img src="img/favicon.png" alt="cloud icon" id="icon" draggable="true" ondragstart="drag(event)">
+    </div>
+    <form><button>Reset</button></form>
+    <!--Second container-->
+    <div id="contTwo" ondrop="drop(event)" ondragover="doDrop(event)">
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>
